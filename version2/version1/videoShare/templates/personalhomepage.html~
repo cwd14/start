@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视频主页</title>
+
+<style type="text/css">
+	body
+	{
+		background: #999;	
+	}
+	#info
+	{
+	border: medium dashed #F63;
+	position: absolute;
+	right: 0%;
+	width: 30%;
+	height: 10%;
+	}
+	#search
+	{
+		border: medium dotted #F63;
+		position: absolute;
+		top: 4%;
+		left: 20%;
+		width: 30%;
+		height: 5%;
+	}
+	#sort
+	{
+		border: medium double #903;
+		position: absolute;
+		left: 2%;
+		right: 2%;
+		top: 15%;
+		width: 96%;
+		height: 20%;
+		z-index: 0;
+	}
+	#pic
+	{
+		position:absolute;	
+	}
+	#video
+	{
+		border: thick  groove #CCC;
+		position: absolute;
+		top:40%;
+		left: 2%;
+		right: 2%;
+		width: 96%;
+		height: 100%;
+	}
+</style>
+</head>
+
+<body>
+
+<div id="info">
+
+<img src="photo.jpg" width="50" height="40" />测试员,欢迎您！	观看历史 	 收藏夹	<a href="投稿页面.html">投稿</a> 	
+</div>
+<div id = "search">search</div>
+<div id = "sort">
+<h2>此区域用来放置“视频类别” & “视频搜索”</h2>
+</div>
+
+<div id = "video">
+<h2>此区域用来放置“推荐视频” + “视频描述” 比如：</h2>
+
+<h2><img src="tongzi.jpg" alt="" width="400" height="200"><a href="播放页面.html">刀剑神域第一集</a></h2>
+</div>
+
+
+
+
+</body>
+</html>
