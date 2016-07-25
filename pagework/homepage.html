@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视频主页</title>
+   <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+   <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	#body
+	{
+		background: #666;	
+	}
+	.top
+	{
+		
+		border: thin solid #996;
+		position: absolute;
+		top: 0%;
+		height: 10%;
+		width: 100%;
+		z-index: -1;
+		
+	}
+	#top_pic
+	{
+		position: absolute;
+		z-index: -1;
+	}
+	#logo
+	{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		height: 10%;
+		width: 35%;
+		z-index: 1;
+	}
+	#info
+	{
+		position: absolute;
+		top: 0%;
+		left: 55%;
+		width: 15%;
+		height: 10%;
+		z-index: 1;
+	}
+	#history
+	{
+		position: absolute;
+		top: 0%;
+		left: 71%;
+		width: 7%;
+		height: 10%;
+		z-index: 1;
+	}
+	#favorite
+	{
+		position: absolute;
+		top: 2%;
+		left: 78%;
+		width: 5%;
+		height: 10%;
+		z-index: 1;
+	}
+	#contribute
+	{
+		position: absolute;
+		top: 2%;
+		left: 83%;
+		width: 5%;
+		height: 10%;
+		z-index: 1;
+	}
+	.I
+	{
+		border: medium solid  #996;
+		position: absolute;
+		top : 11%;
+		width: 100%;
+		height: 20%;
+	}
+	#sou_text input
+	{
+		position: absolute;
+		top: 20%;
+		right: 15%;
+		width: 25%;
+		height: 25%;
+	}
+	#sou_btn input
+	{
+		position: absolute;
+		top: 20%;
+		right: 10%;
+		width: 5%;
+		height: 25%;
+	}
+	.II
+	{
+		border: medium double #903;
+		position: absolute;
+		top: 36%;
+		left: 2%;
+		right: 2%;
+		width: 96%;
+		height: 40%;
+	}
+	#pic
+	{
+		position:absolute;	
+	}
+	#video
+	{
+		border: thick  groove #CCC;
+		position: absolute;
+		top:240%;
+		left: 2%;
+		right: 2%;
+		width: 96%;
+		height: 100%;
+	}
+</style>
+</head>
+
+<body id = "body">
+
+<div class = "top"><!--区域TOP含有顶部的一些DIV  有 logo、info、history、favorite、contribute-->
+	<img id = "top_pic" src="TOP.jpg"style= ' width: 100%; height: 100% '/>
+ 	
+ 	<div id = "logo"><!--用来设置logo-->
+    	<h1> LOGO</h1>
+ 	</div>
+    
+	<div id = "info"><!--用来设置info-->
+    	<img src="photo.jpg" width="50" height="40" /><a href="个人信息.html">测试员,欢迎您！	</a>
+    </div>
+    
+    <div id = "history"><!--用来设置历史记录-->
+    	<button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">History<span class="caret"></span>
+   	 	</button><!--用来设置下拉菜单，可以显示历史记录-->
+    	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+       		<li role="presentation">
+        		<a role="menuitem" tabindex="-1" href="#">Java</a>
+      		</li>
+     		<li role="presentation">
+        		<a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+     		</li>
+     	</ul>
+    </div>
+    
+    <div id = "favorite"><!--用来设置收藏夹-->
+     	<a href="投稿页面.html">收藏夹</a> 	
+    </div>
+    
+    <div id = "contribute"><!--用来设置发布视频链接至发布页面-->
+     	<a href="投稿页面.html">投稿</a> 	
+   </div>
+</div>
+
+<div class = "I"><!--区域I用来设置动画图片-->
+	<img id = "top_pic" src="TOP.jpg"style= ' width: 100%; height: 100% '/>
+    此区域用来放置动画图片
+    <!--区域用来设置搜索框及搜索-->
+	<div id = "sou_text">
+		<input type="text" />
+	</div>
+    <div id = "sou_btn">
+   		<input type = "button" value = "Search"/>
+  
+</div>
+</div>
+
+
+
+
+
+<div class = "II"><!--此区域用来放置分类及下拉菜单显示分类-->
+	<div><!--设置标头-->
+		<h2>电影区</h2>
+	</div>
+<div class = "sort">
+    <button type="button" class="btn btn-primary" data-toggle="collapse" 
+   data-target="#demo">
+	刀剑神域
+</button>
+
+<div id="demo" class="collapse out">
+  <a href = "play.html"><img src="示例.jpg" width="200" height="100" /></a>
+   <a href = "play.html"><img src="photo.jpg" width="115" height="98" /></a>
+  </div>
+
+</div>
+<div id = "video"><!--此区域用来放置推荐视频-->
+	<h2>此区域用来放置"推荐视频" + "视频描述" 比如：</h2>
+
+<h2><img src="示例.jpg" alt="" width="400" height="200"><a href="play.html">刀剑神域第一集</a></h2>
+</div>
+</body>
+</html>

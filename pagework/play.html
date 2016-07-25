@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视频播放页面</title>
+
+<style type="text/css">
+#body 
+{
+	background: #333;
+	
+}
+#name
+{
+	position: absolute;
+	top: 2%;
+	left: 10%;
+}
+#video-play
+{
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: 75%;
+	border-top-style: double;
+	border-right-style: double;
+	border-bottom-style: double;
+	border-left-style: double;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+#comment
+{
+	position: absolute;
+	top: 95%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: 30%;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+}
+#video
+{
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: 75%;
+}
+</style>
+</head>
+
+<body id = "body">
+
+
+<div id = "name">
+<h1>此区域显示“视频名称”</h1>
+</div>
+<div id = "video-play">
+<h2>此区域是“视频播放”板块</h2>
+<table>
+<tr>
+<video  id = "video" src="1.mp4" controls="controls">
+</video>
+</tr>
+</table>
+</div>
+
+<div id = "comment">
+<h2>此区域是“用户评论”板块</h2>
+</div>
+
+</body>
+</html>
