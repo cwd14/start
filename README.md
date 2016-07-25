@@ -1,3 +1,4 @@
 # start
 start
-syy gets
+sxy gets
+zy comes
